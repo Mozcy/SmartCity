@@ -80,4 +80,13 @@ class AppConfig : Application() {
     companion object {
         val circle = RequestOptions.circleCropTransform()
     }
+
+    override fun onCreate() {
+        super.onCreate()
+        var sp = getSharedPreferences("DATA", MODE_PRIVATE)
+        val ip = sp.getString("IP", "192.168.8.110")
+        val port = sp.getString("PORT", "10002")
+        imageURL = "http://${ip}:${port}/prod-api"
+        baseURL = "http://${ip}:${port}"
+    }
 }

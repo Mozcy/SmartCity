@@ -11,7 +11,7 @@
     <item
         android:id="@+id/main_nav3"
         android:icon="@mipmap/main_nav3"
-        android:title="精准扶贫" />
+        android:title="智慧党建" />
     <item
         android:id="@+id/main_nav4"
         android:icon="@mipmap/main_nav4"

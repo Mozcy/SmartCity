@@ -8,8 +8,8 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException
 
-const val imageURL = "http://192.168.8.110/prod-api"
-const val baseURL = "http://192.168.8.110:10002"
+var imageURL = "http://192.168.8.110/prod-api"
+var baseURL = "http://192.168.8.110:10002"
 
 var token = ""
 val gson = Gson()
