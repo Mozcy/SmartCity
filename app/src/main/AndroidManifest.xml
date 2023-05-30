@@ -16,6 +16,13 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.personal.LoginActivity" />
         <activity android:name=".activity.personal.RegistryActivity" />
+        <activity android:name=".activity.personal.PersonalInfoActivity" />
+        <activity android:name=".activity.personal.PersonalOderInfoActivity" />
+        <activity android:name=".activity.personal.PersonalOderListActivity" />
+        <activity android:name=".activity.personal.PersonalFeedbackActivity" />
+        <activity android:name=".activity.personal.PersonalFeedbackInfoActivity" />
+        <activity android:name=".activity.personal.PersonalFeedbackListActivity" />
+        <activity android:name=".activity.personal.PersonalChangePasswordActivity" />
         <activity android:name=".activity.home.NullActivity" />
         <activity android:name=".activity.home.NewsInfoActivity" />
         <activity android:name=".activity.home.NewsSearchActivity" />
