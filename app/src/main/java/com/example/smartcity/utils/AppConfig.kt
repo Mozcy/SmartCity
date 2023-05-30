@@ -85,8 +85,7 @@ class AppConfig : Application() {
         super.onCreate()
         var sp = getSharedPreferences("DATA", MODE_PRIVATE)
         val ip = sp.getString("IP", "192.168.8.110")
-        val port = sp.getString("PORT", "10002")
-        imageURL = "http://${ip}:${port}/prod-api"
+        val port = sp.getString("PORT", "10001")
         baseURL = "http://${ip}:${port}"
     }
 }

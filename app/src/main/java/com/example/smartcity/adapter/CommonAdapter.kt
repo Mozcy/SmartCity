@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import com.bumptech.glide.Glide
-import com.example.smartcity.utils.imageURL
+import com.example.smartcity.utils.baseURL
 import java.lang.reflect.ParameterizedType
 
 abstract class CommonAdapter<V : ViewBinding, T>(private val data: List<T>) :
@@ -40,13 +40,7 @@ abstract class CommonAdapter<V : ViewBinding, T>(private val data: List<T>) :
     }
 
     fun <I> setImage(imageView: ImageView, data: I?): CommonAdapter<V, T> {
-        Glide.with(imageView.context)
-            .load(
-                if (data is String) imageURL + (data as String).replace(
-                    "/prod-api",
-                    ""
-                ) else data
-            )
+        Glide.with(imageView.context).load(if (data is String) baseURL + data else data)
             .into(imageView)
         return this
     }

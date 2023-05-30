@@ -9,7 +9,6 @@ import com.example.smartcity.databinding.ActivityGuideBinding
 import com.example.smartcity.databinding.DialogIpSetBinding
 import com.example.smartcity.utils.baseURL
 import com.example.smartcity.utils.hide
-import com.example.smartcity.utils.imageURL
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.holder.BannerImageHolder
 import com.youth.banner.indicator.CircleIndicator
@@ -86,7 +85,6 @@ class GuideActivity : BaseActivity<ActivityGuideBinding>() {
                     } else {
                         dialog.dismiss()
                         toast("${inflate.tvBtn.text}成功")
-                        imageURL = "http://${ip}:${port}/prod-api"
                         baseURL = "http://${ip}:${port}"
                         spe.putString("IP", ip).putString("PORT", port).apply()
                     }

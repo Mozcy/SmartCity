@@ -8,8 +8,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException
 
-var imageURL = "http://192.168.8.110/prod-api"
-var baseURL = "http://192.168.8.110:10002"
+var baseURL = "http://192.168.8.110:10001"
 
 var token = ""
 val gson = Gson()
@@ -34,7 +33,7 @@ inline fun <reified T> put(url: String, map: Map<*, *>, crossinline ok: (T) -> U
 }
 
 fun request(method: String, url: String, body: RequestBody? = null): Request {
-    return Request.Builder().url(baseURL + url).method(method, body).also {
+    return Request.Builder().url("${baseURL}/prod-api" + url).method(method, body).also {
         if (token.isNotEmpty()) it.addHeader("Authorization", token)
     }.build()
 }
