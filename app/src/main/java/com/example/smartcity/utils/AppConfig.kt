@@ -12,6 +12,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.TextView
 import com.bumptech.glide.request.RequestOptions
+import com.example.smartcity.activity.home.NullActivity
+import com.example.smartcity.pojo.personal.PersonalUserData
 
 /**
  * 键盘输入后隐藏键盘
@@ -74,6 +76,18 @@ fun Activity.permission(): Boolean {
     }
     return true
 }
+
+/**
+ * 临时的用户信息存储
+ */
+var userBean: PersonalUserData.UserBean? = null
+
+/**
+ * 各各模块的服务入口
+ */
+val entry = mapOf(
+    "" to NullActivity::class.java
+)
 
 class AppConfig : Application() {
 

@@ -1,17 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <include layout="@layout/main_toolbar" />
 
-    <TextView
-        android:id="@+id/tv"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="首页"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/size_18" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/box_blue_5"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="请输入搜索内容: 例 国"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/size_15" />
+
+            <include
+                android:id="@+id/banner"
+                layout="@layout/main_banner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/v_line"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="服务入口"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_15"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/v_line"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="热门主题"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_15"
+                android:textStyle="bold" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                app:tabIndicatorColor="@color/blue"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="auto"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/blue" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>
