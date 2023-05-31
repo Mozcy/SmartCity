@@ -1,4 +1,4 @@
-package com.example.smartcity.fragment;
+package com.example.smartcity.fragment
 
 import android.app.Activity
 import android.content.Intent
