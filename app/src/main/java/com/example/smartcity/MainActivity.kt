@@ -33,6 +33,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun onClick() {
         // 点击底部导航栏切换到对应的页面
         bind.nav.setOnNavigationItemSelectedListener {
+            window?.statusBarColor =
+                c.getColor(if (it.itemId == R.id.main_nav3) R.color.red else R.color.blue)
             sp[it.itemId].let {
                 if (current != it) {
                     supportFragmentManager.beginTransaction().show(it).hide(current).commit()
