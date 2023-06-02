@@ -22,7 +22,7 @@ import com.example.smartcity.adapter.ViewHolder
 import com.example.smartcity.base.BaseFragment
 import com.example.smartcity.databinding.*
 import com.example.smartcity.pojo.Data
-import com.example.smartcity.pojo.TTS
+import com.example.smartcity.utils.TTS
 import com.example.smartcity.utils.hide
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.config.IndicatorConfig

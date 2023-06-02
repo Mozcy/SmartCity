@@ -1,9 +1,11 @@
 package com.example.smartcity.pojo;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 
 import com.example.smartcity.R;
 import com.example.smartcity.activity.limited.N3Q2Activity;
+import com.example.smartcity.activity.limited.N3Q3Activity;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -19,7 +21,8 @@ public class Data {
     );
 
     public static List<Service> homeEntry = Arrays.asList(
-            new Service(R.drawable.nav3_entry1, "党建动态", N3Q2Activity.class)
+            new Service(R.drawable.nav3_entry1, "党建动态", N3Q2Activity.class),
+            new Service(R.drawable.nav3_entry1, "党员学习", N3Q3Activity.class)
     );
 
     public static List<News> news = Arrays.asList(

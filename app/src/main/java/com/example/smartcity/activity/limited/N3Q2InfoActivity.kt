@@ -8,7 +8,7 @@ import com.example.smartcity.base.BaseActivity
 import com.example.smartcity.databinding.ActivityN3Q2InfoBinding
 import com.example.smartcity.databinding.ItemMainNav1CommentBinding
 import com.example.smartcity.pojo.Data
-import com.example.smartcity.pojo.TTS
+import com.example.smartcity.utils.TTS
 import com.example.smartcity.utils.hide
 
 class N3Q2InfoActivity : BaseActivity<ActivityN3Q2InfoBinding>() {

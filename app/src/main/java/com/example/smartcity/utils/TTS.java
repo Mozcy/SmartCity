@@ -1,4 +1,4 @@
-package com.example.smartcity.pojo;
+package com.example.smartcity.utils;
 
 import android.content.Context;
 import android.os.Handler;

@@ -16,7 +16,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".activity.limited.N3Q2Activity" />
+        <activity android:name=".activity.limited.N3Q3Activity" />
         <activity android:name=".activity.limited.N3Q2InfoActivity" />
+        <activity android:name=".activity.limited.N3Q3InfoActivity" />
         <activity android:name=".activity.personal.LoginActivity" />
         <activity android:name=".activity.personal.RegistryActivity" />
         <activity android:name=".activity.personal.PersonalInfoActivity" />

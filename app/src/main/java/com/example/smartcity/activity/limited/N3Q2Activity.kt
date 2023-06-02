@@ -18,7 +18,7 @@ import com.example.smartcity.databinding.ItemMainNav3Home0Binding
 import com.example.smartcity.databinding.ItemMainNav3Home1Binding
 import com.example.smartcity.databinding.ItemMainNav3Home2Binding
 import com.example.smartcity.pojo.Data
-import com.example.smartcity.pojo.TTS
+import com.example.smartcity.utils.TTS
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 

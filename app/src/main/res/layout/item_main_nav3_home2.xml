@@ -6,7 +6,7 @@
     android:layout_marginTop="1dp"
     android:background="@color/white">
 
-    <com.example.smartcity.pojo.Video
+    <com.example.smartcity.utils.Video
         android:id="@+id/vv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
