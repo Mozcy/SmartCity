@@ -7,6 +7,7 @@ import com.example.smartcity.activity.limited.N3Q2Activity;
 import com.example.smartcity.activity.limited.N3Q3Activity;
 import com.example.smartcity.activity.limited.N3Q4Activity;
 import com.example.smartcity.activity.limited.N3Q5Activity;
+import com.example.smartcity.activity.limited.N3Q6Activity;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -25,7 +26,8 @@ public class Data {
             new Service(R.drawable.nav3_entry1, "党建动态", N3Q2Activity.class),
             new Service(R.drawable.nav3_entry2, "党员学习", N3Q3Activity.class),
             new Service(R.drawable.nav3_entry3, "组织活动", N3Q4Activity.class),
-            new Service(R.drawable.nav3_entry4, "建言献策", N3Q5Activity.class)
+            new Service(R.drawable.nav3_entry4, "建言献策", N3Q5Activity.class),
+            new Service(R.drawable.nav3_entry5, "随手拍", N3Q6Activity.class)
             );
 
     public static List<News> news = Arrays.asList(

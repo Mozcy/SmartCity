@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smartcity">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -19,10 +20,12 @@
         <activity android:name=".activity.limited.N3Q3Activity" />
         <activity android:name=".activity.limited.N3Q4Activity" />
         <activity android:name=".activity.limited.N3Q5Activity" />
+        <activity android:name=".activity.limited.N3Q6Activity" />
         <activity android:name=".activity.limited.N3Q2InfoActivity" />
         <activity android:name=".activity.limited.N3Q3InfoActivity" />
         <activity android:name=".activity.limited.N3Q4InfoActivity" />
         <activity android:name=".activity.limited.N3Q5InfoActivity" />
+        <activity android:name=".activity.limited.N3Q6InfoActivity" />
         <activity android:name=".activity.personal.LoginActivity" />
         <activity android:name=".activity.personal.RegistryActivity" />
         <activity android:name=".activity.personal.PersonalInfoActivity" />
