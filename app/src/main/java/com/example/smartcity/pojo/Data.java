@@ -8,6 +8,7 @@ import com.example.smartcity.activity.limited.N3Q3Activity;
 import com.example.smartcity.activity.limited.N3Q4Activity;
 import com.example.smartcity.activity.limited.N3Q5Activity;
 import com.example.smartcity.activity.limited.N3Q6Activity;
+import com.example.smartcity.activity.limited.N3Q7Activity;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -27,8 +28,9 @@ public class Data {
             new Service(R.drawable.nav3_entry2, "党员学习", N3Q3Activity.class),
             new Service(R.drawable.nav3_entry3, "组织活动", N3Q4Activity.class),
             new Service(R.drawable.nav3_entry4, "建言献策", N3Q5Activity.class),
-            new Service(R.drawable.nav3_entry5, "随手拍", N3Q6Activity.class)
-            );
+            new Service(R.drawable.nav3_entry5, "随手拍", N3Q6Activity.class),
+            new Service(R.drawable.nav3_entry6, "百年党史", N3Q7Activity.class)
+    );
 
     public static List<News> news = Arrays.asList(
             new News(0, R.drawable.dang1, R.raw.video01, "智慧党建 2023-06-02 12:32", "习近平向特朗普致慰问电", "国家主席习近平10月3日致电美国总统特朗普，就特朗普总统夫妇感染新冠病毒致以慰问。习近平在慰问电中表示，得知总统先生和梅拉尼娅女士感染新冠病毒，我和我夫人彭丽媛谨向你和你夫人表示慰问，祝你们早日康复。"),

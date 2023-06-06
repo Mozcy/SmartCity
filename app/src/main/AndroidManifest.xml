@@ -21,6 +21,7 @@
         <activity android:name=".activity.limited.N3Q4Activity" />
         <activity android:name=".activity.limited.N3Q5Activity" />
         <activity android:name=".activity.limited.N3Q6Activity" />
+        <activity android:name=".activity.limited.N3Q7Activity" />
         <activity android:name=".activity.limited.N3Q2InfoActivity" />
         <activity android:name=".activity.limited.N3Q3InfoActivity" />
         <activity android:name=".activity.limited.N3Q4InfoActivity" />
