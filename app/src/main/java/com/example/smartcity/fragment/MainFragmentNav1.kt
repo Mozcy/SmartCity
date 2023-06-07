@@ -60,10 +60,13 @@ class MainFragmentNav1 : BaseFragment<FragmentMainNav1Binding>() {
             }
         }
         get<ServiceListData>("/api/service/list") {
-            it.rows.add(ServiceListData.RowsBean().apply { sort = -1; serviceName = "更多服务" })
             it.rows.apply { sortWith(Comparator { o1, o2 -> o2.sort - o1.sort }) }
+            val data = it.rows.filterIndexed { index, _ -> index < 9 }.let {
+                var more = ServiceListData.RowsBean().apply { sort = -1; serviceName = "更多服务" }
+                it.toMutableList().apply { add(more) }
+            }
             bind.rv0.adapter = object :
-                CommonAdapter<ItemMainNav1Rv0Binding, ServiceListData.RowsBean>(it.rows.filterIndexed { index, _ -> index > 14 }) {
+                CommonAdapter<ItemMainNav1Rv0Binding, ServiceListData.RowsBean>(data) {
                 override fun bind(
                     holder: ItemMainNav1Rv0Binding, data: ServiceListData.RowsBean
                 ) {
