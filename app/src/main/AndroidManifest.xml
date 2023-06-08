@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".activity.housekeeping.HouseKeepingActivity" />
+        <activity android:name=".activity.housekeeping.HouseKeepingInfoActivity" />
+        <activity android:name=".activity.housekeeping.HouseKeepingListActivity" />
         <activity android:name=".activity.limited.N3Q2Activity" />
         <activity android:name=".activity.limited.N3Q3Activity" />
         <activity android:name=".activity.limited.N3Q4Activity" />
