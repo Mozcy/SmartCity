@@ -14,6 +14,7 @@ import android.widget.TextView
 import com.bumptech.glide.request.RequestOptions
 import com.example.smartcity.activity.home.NullActivity
 import com.example.smartcity.activity.housekeeping.HouseKeepingActivity
+import com.example.smartcity.activity.sport.SportActivity
 import com.example.smartcity.pojo.personal.PersonalUserData
 
 /**
@@ -88,7 +89,8 @@ var userBean: PersonalUserData.UserBean? = null
  * 各各模块的服务入口
  */
 val entry = mapOf(
-    "家政服务" to HouseKeepingActivity::class.java
+    "家政服务" to HouseKeepingActivity::class.java,
+    "运动健身" to SportActivity::class.java
 )
 
 class AppConfig : Application() {

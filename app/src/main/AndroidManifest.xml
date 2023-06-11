@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".activity.sport.SportActivity" />
+        <activity android:name=".activity.sport.SportInfoActivity" />
+        <activity android:name=".activity.sport.SportListActivity" />
+        <activity android:name=".activity.sport.SportReserveActivity" />
+        <activity android:name=".activity.sport.SportReserveListActivity" />
         <activity android:name=".activity.housekeeping.HouseKeepingActivity" />
         <activity android:name=".activity.housekeeping.HouseKeepingInfoActivity" />
         <activity android:name=".activity.housekeeping.HouseKeepingListActivity" />
