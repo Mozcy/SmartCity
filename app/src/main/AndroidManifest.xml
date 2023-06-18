@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".activity.library.LibraryActivity" />
+        <activity android:name=".activity.library.LibraryInfoActivity" />
+        <activity android:name=".activity.library.LibraryCommentActivity" />
         <activity android:name=".activity.gov.GovActivity" />
         <activity android:name=".activity.gov.GovAddActivity" />
         <activity android:name=".activity.gov.GovListActivity" />
